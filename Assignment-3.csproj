@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9137516-9F3C-4D30-93B3-F1136CBC1A0A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assignment_3</RootNamespace>
+    <AssemblyName>Assignment-3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gallerised\images\AdamsSpeedlineSet.jpg" />
+    <Content Include="gallerised\images\AdamsSuperWmnSet.jpg" />
+    <Content Include="gallerised\images\BauerOne6Stick.jpg" />
+    <Content Include="gallerised\images\BauerOne7Stick.jpg" />
+    <Content Include="gallerised\images\BauerSupreme170.jpg" />
+    <Content Include="gallerised\images\BauerSupreme180.jpg" />
+    <Content Include="gallerised\images\CCM_Rbz80.jpg" />
+    <Content Include="gallerised\images\CCM_Rbz90.jpg" />
+    <Content Include="gallerised\images\demo\240x90.gif" />
+    <Content Include="gallerised\images\demo\60x60.gif" />
+    <Content Include="gallerised\images\demo\avatar.gif" />
+    <Content Include="gallerised\images\demo\gallery\174x174.gif" />
+    <Content Include="gallerised\images\demo\gallery\500x500.gif" />
+    <Content Include="gallerised\images\demo\gallery\index.html" />
+    <Content Include="gallerised\images\demo\homepage\1.gif" />
+    <Content Include="gallerised\images\demo\homepage\2.gif" />
+    <Content Include="gallerised\images\demo\homepage\3.gif" />
+    <Content Include="gallerised\images\demo\homepage\4.gif" />
+    <Content Include="gallerised\images\demo\homepage\5.gif" />
+    <Content Include="gallerised\images\demo\homepage\index.html" />
+    <Content Include="gallerised\images\demo\imgl.gif" />
+    <Content Include="gallerised\images\demo\imgr.gif" />
+    <Content Include="gallerised\images\demo\index.html" />
+    <Content Include="gallerised\images\featured_slide\index.html" />
+    <Content Include="gallerised\images\featured_slide\stripe.gif" />
+    <Content Include="gallerised\images\Free.jpg" />
+    <Content Include="gallerised\images\Hurricane.jpg" />
+    <Content Include="gallerised\images\index.html" />
+    <Content Include="gallerised\images\NewBalance.jpg" />
+    <Content Include="gallerised\images\NikeEarnTee.jpg" />
+    <Content Include="gallerised\images\NikeFlyShort.jpg" />
+    <Content Include="gallerised\images\NikeVerdanaSet.jpg" />
+    <Content Include="gallerised\images\Nimbus.jpg" />
+    <Content Include="gallerised\images\Spine.jpg" />
+    <Content Include="gallerised\images\TommyArmourSet.jpg" />
+    <Content Include="gallerised\images\UABigLogo.jpg" />
+    <Content Include="gallerised\images\UAMicroShort.jpg" />
+    <Content Include="gallerised\images\UASupermanTee.jpg" />
+    <Content Include="gallerised\images\WApollo.jpg" />
+    <Content Include="gallerised\images\WFree5.jpg" />
+    <Content Include="gallerised\images\white_file.gif" />
+    <Content Include="gallerised\images\WNewBalance.jpg" />
+    <Content Include="gallerised\images\WNike2in1Short.jpg" />
+    <Content Include="gallerised\images\WNikeMilerTee.jpg" />
+    <Content Include="gallerised\images\WNikeProTee.jpg" />
+    <Content Include="gallerised\images\WNimbus.jpg" />
+    <Content Include="gallerised\images\WRide.jpg" />
+    <Content Include="gallerised\images\WUAGetGoingShort.jpg" />
+    <Content Include="gallerised\images\WUASonicTee.jpg" />
+    <Content Include="gallerised\images\yellow_file.gif" />
+    <Content Include="gallerised\scripts\fancybox\blank.gif" />
+    <Content Include="gallerised\scripts\fancybox\fancybox-x.png" />
+    <Content Include="gallerised\scripts\fancybox\fancybox-y.png" />
+    <Content Include="gallerised\scripts\fancybox\fancybox.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_close.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_loading.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_nav_left.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_nav_right.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_e.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_n.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_ne.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_nw.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_s.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_se.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_sw.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_shadow_w.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_title_left.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_title_main.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_title_over.png" />
+    <Content Include="gallerised\scripts\fancybox\fancy_title_right.png" />
+    <Content Include="gallerised\scripts\fancybox\index.html" />
+    <Content Include="gallerised\scripts\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="gallerised\scripts\fancybox\jquery.fancybox-1.3.2.css" />
+    <Content Include="gallerised\scripts\fancybox\jquery.fancybox-1.3.2.js" />
+    <Content Include="gallerised\scripts\fancybox\jquery.fancybox-1.3.2.pack.js" />
+    <Content Include="gallerised\scripts\fancybox\jquery.fancybox-1.3.2.setup.js" />
+    <Content Include="gallerised\scripts\fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="gallerised\scripts\index.html" />
+    <Content Include="gallerised\scripts\jquery-1.4.3.min.js" />
+    <Content Include="gallerised\scripts\jquery.s3slider.js" />
+    <Content Include="gallerised\scripts\jquery.s3slider.setup.js" />
+    <Content Include="gallerised\styles\featured_slide.css" />
+    <Content Include="gallerised\styles\forms.css" />
+    <Content Include="gallerised\styles\layout.css" />
+    <Content Include="gallerised\styles\navi.css" />
+    <Content Include="Images\AdamsSpeedlineSet.jpg" />
+    <Content Include="Images\AdamsSuperWmnSet.jpg" />
+    <Content Include="Images\BauerOne6Stick.jpg" />
+    <Content Include="Images\BauerOne7Stick.jpg" />
+    <Content Include="Images\BauerSupreme170.jpg" />
+    <Content Include="Images\BauerSupreme180.jpg" />
+    <Content Include="Images\CCM_Rbz80.jpg" />
+    <Content Include="Images\CCM_Rbz90.jpg" />
+    <Content Include="Images\Free.jpg" />
+    <Content Include="Images\Hurricane.jpg" />
+    <Content Include="Images\NewBalance.jpg" />
+    <Content Include="Images\NikeEarnTee.jpg" />
+    <Content Include="Images\NikeFlyShort.jpg" />
+    <Content Include="Images\NikeVerdanaSet.jpg" />
+    <Content Include="Images\Nimbus.jpg" />
+    <Content Include="Images\Spine.jpg" />
+    <Content Include="Images\TommyArmourSet.jpg" />
+    <Content Include="Images\UABigLogo.jpg" />
+    <Content Include="Images\UAMicroShort.jpg" />
+    <Content Include="Images\UASupermanTee.jpg" />
+    <Content Include="Images\WApollo.jpg" />
+    <Content Include="Images\WFree5.jpg" />
+    <Content Include="Images\WNewBalance.jpg" />
+    <Content Include="Images\WNike2in1Short.jpg" />
+    <Content Include="Images\WNikeMilerTee.jpg" />
+    <Content Include="Images\WNikeProTee.jpg" />
+    <Content Include="Images\WNimbus.jpg" />
+    <Content Include="Images\WRide.jpg" />
+    <Content Include="Images\WUAGetGoingShort.jpg" />
+    <Content Include="Images\WUASonicTee.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="Footwear.aspx" />
+    <Content Include="Clothing.aspx" />
+    <Content Include="SportingGoods.aspx" />
+    <Content Include="AllProducts.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="ShoppingCart.aspx" />
+    <Content Include="ProductMgmt.aspx" />
+    <Content Include="Admin.aspx" />
+    <Content Include="About.aspx" />
+    <Content Include="ProductSpecs.aspx" />
+    <Content Include="Orders.aspx" />
+    <Content Include="SalesByCustomer.aspx" />
+    <Content Include="SalesByItem.aspx" />
+    <Content Include="SalesByItemQuantity.aspx" />
+    <Content Include="ThankYou.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Admin.cs" />
+    <Compile Include="Classes\Cart.cs" />
+    <Compile Include="Classes\CartItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footwear.aspx.cs">
+      <DependentUpon>Footwear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footwear.aspx.designer.cs">
+      <DependentUpon>Footwear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clothing.aspx.cs">
+      <DependentUpon>Clothing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clothing.aspx.designer.cs">
+      <DependentUpon>Clothing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SportingGoods.aspx.cs">
+      <DependentUpon>SportingGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SportingGoods.aspx.designer.cs">
+      <DependentUpon>SportingGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllProducts.aspx.cs">
+      <DependentUpon>AllProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllProducts.aspx.designer.cs">
+      <DependentUpon>AllProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMgmt.aspx.cs">
+      <DependentUpon>ProductMgmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductMgmt.aspx.designer.cs">
+      <DependentUpon>ProductMgmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSpecs.aspx.cs">
+      <DependentUpon>ProductSpecs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSpecs.aspx.designer.cs">
+      <DependentUpon>ProductSpecs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesByCustomer.aspx.cs">
+      <DependentUpon>SalesByCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesByCustomer.aspx.designer.cs">
+      <DependentUpon>SalesByCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesByItem.aspx.cs">
+      <DependentUpon>SalesByItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesByItem.aspx.designer.cs">
+      <DependentUpon>SalesByItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesByItemQuantity.aspx.cs">
+      <DependentUpon>SalesByItemQuantity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesByItemQuantity.aspx.designer.cs">
+      <DependentUpon>SalesByItemQuantity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DALproject\DAL_Project\DAL_Project\DAL_Project.csproj">
+      <Project>{e3026510-5b06-4ff2-816b-3f06cbe5f7df}</Project>
+      <Name>DAL_Project</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16489/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

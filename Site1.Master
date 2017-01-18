@@ -1,0 +1,67 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment_3.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="gallerised/styles/forms.css" rel="stylesheet" />
+        <link href="gallerised/styles/layout.css" rel="stylesheet" />
+        <link href="gallerised/styles/navi.css" rel="stylesheet" />
+        <link href="gallerised/styles/tables.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >  
+            </asp:ContentPlaceHolder>
+    
+<div class="wrapper col1">
+  <div id="header">
+    <div id="topnav">
+      <ul>
+        <li class="last"><a href="Login.aspx">Login</a><span>To Your Account</span></li>
+        <li><a href="AllProducts.aspx">Products</a><span>By Department</span>
+          <ul>
+            <li><a href="Footwear.aspx">Footwear</a></li>
+            <li><a href="Clothing.aspx">Clothing</a></li>
+            <li><a href="SportingGoods.aspx">Sporting Goods</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="About.aspx">About Us</a><span>Your hometown team</span></li>
+        <li><a href="ProductSpecs.aspx">Product Specs</a><span>Visit our vendor sites</span></li>
+        <li><a href="Default.aspx">Homepage</a><span>Return Home</span></li>
+      </ul>
+    </div>
+    <div class="fl_left">
+      <h1><a href="#">ACTIVE LIVING</a></h1>
+        <p class="bold" style="position:absolute">
+            <asp:LinkButton ID="btnViewCart" runat="server" OnClick="btnViewCart_Click"><<-View Cart->></asp:LinkButton>
+            <asp:LinkButton ID="btnAdminPage" runat="server" OnClick="btnAdminPage_Click"><<-Go To Admin Page->></asp:LinkButton>
+            <br /><br />
+            <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click"><<--Logout-->></asp:LinkButton>
+            <asp:Label ID="lblCustomerId" runat="server" Text=""></asp:Label><br /><br />
+        </p>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >      
+</asp:ContentPlaceHolder>
+<div class="wrapper col5">
+  <div id="footer">
+    <p class="fl_left">Copyright &copy; 2011 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <br class="clear" />
+  </div>
+</div>
+
+
+    </div>
+    </form>
+</body>
+</html>
